@@ -21,7 +21,7 @@ spec = Gem::Specification.new do |s|
 
   files   = %w(README LICENCE ChangeLog bin/**/* lib/**/* demo/**/*
              images/**/* demo/**/* manual.pwd)
-  s.files = FileList[*files]
+  s.files = Dir[*files]
 
   s.autorequire       = %(pdf/writer)
   s.require_paths     = %w(lib)
